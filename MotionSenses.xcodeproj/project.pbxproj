@@ -15,6 +15,9 @@
 		577D0B912680A8A8007EA929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577D0B8F2680A8A8007EA929 /* LaunchScreen.storyboard */; };
 		577D0B9C2680A8A8007EA929 /* MotionSensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0B9B2680A8A8007EA929 /* MotionSensesTests.swift */; };
 		577D0BA72680A8A8007EA929 /* MotionSensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0BA62680A8A8007EA929 /* MotionSensesUITests.swift */; };
+		577D0BB52680A8B8007EA929 /* BLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0BB42680A8B8007EA929 /* BLEPeripheral.swift */; };
+		577D0BB92680AF53007EA929 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0BB82680AF53007EA929 /* MotionManager.swift */; };
+		57F18DB8268492B4006C5EA2 /* MotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F18DB7268492B4006C5EA2 /* MotionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		577D0BA22680A8A8007EA929 /* MotionSensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionSensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577D0BA62680A8A8007EA929 /* MotionSensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSensesUITests.swift; sourceTree = "<group>"; };
 		577D0BA82680A8A8007EA929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577D0BB42680A8B8007EA929 /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
+		577D0BB82680AF53007EA929 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		57F18DB7268492B4006C5EA2 /* MotionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		577D0B832680A8A6007EA929 /* MotionSenses */ = {
 			isa = PBXGroup;
 			children = (
+				577D0BB72680AF10007EA929 /* BLE */,
+				577D0BB62680AF07007EA929 /* Motion */,
 				577D0B842680A8A6007EA929 /* AppDelegate.swift */,
 				577D0B862680A8A6007EA929 /* SceneDelegate.swift */,
 				577D0B882680A8A6007EA929 /* ViewController.swift */,
@@ -126,6 +134,23 @@
 				577D0BA82680A8A8007EA929 /* Info.plist */,
 			);
 			path = MotionSensesUITests;
+			sourceTree = "<group>";
+		};
+		577D0BB62680AF07007EA929 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				577D0BB82680AF53007EA929 /* MotionManager.swift */,
+				57F18DB7268492B4006C5EA2 /* MotionData.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		577D0BB72680AF10007EA929 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				577D0BB42680A8B8007EA929 /* BLEPeripheral.swift */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F18DB8268492B4006C5EA2 /* MotionData.swift in Sources */,
 				577D0B892680A8A6007EA929 /* ViewController.swift in Sources */,
+				577D0BB92680AF53007EA929 /* MotionManager.swift in Sources */,
+				577D0BB52680A8B8007EA929 /* BLEPeripheral.swift in Sources */,
 				577D0B852680A8A6007EA929 /* AppDelegate.swift in Sources */,
 				577D0B872680A8A6007EA929 /* SceneDelegate.swift in Sources */,
 			);
